@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "bulbasaur",
+    "ownerName": "ash",
+    "ability": "overgrow",
+    "initialPositionX": 0,
+    "initialPositionY": 0,
+    "speed": 1
+  },
+  {
+    "id": "2",
+    "name": "ivysaur",
+    "ownerName": "misty",
+    "ability": "overgrow",
+    "initialPositionX": 10,
+    "initialPositionY": 10,
+    "speed": 1
+  },
+  {
+    "id": "758c118d-58b3-4d47-ba47-e05752b75281",
+    "ownerName": "bulbasaur",
+    "name": "charmander",
+    "ability": "solar-power",
+    "noOfPokemon": 1
+  },
+  {
+    "id": "065e233b-9200-45c0-bb34-eb69e4e54916",
+    "ownerName": "charmander",
+    "name": "charmander",
+    "ability": "solar-power",
+    "noOfPokemon": 12,
+    "initialPositionX": "2",
+    "initialPositionY": "3"
+  },
+  {
+    "id": "61be95a0-923a-4c08-8f9b-3d1510a0844e",
+    "ownerName": "charmander",
+    "name": "charmander",
+    "ability": "blaze",
+    "noOfPokemon": 2
+  },
+  {
+    "id": "10ab4a41-65f8-4a2e-b15a-a80b52721738",
+    "ownerName": "venusaur",
+    "name": "blastoise",
+    "ability": "torrent",
+    "noOfPokemon": 0
+  },
+  {
+    "id": "dd79ba82-9e60-4556-9f21-8418a5625a4c",
+    "ownerName": "venusaur",
+    "name": "charmeleon",
+    "ability": "blaze",
+    "noOfPokemon": 12
+  }
+]
