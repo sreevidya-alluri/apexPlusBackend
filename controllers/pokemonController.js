@@ -22,6 +22,7 @@ const getPokemons = (req, res) => {
             const jsonData = JSON.parse(data);
             console.log('Pokémons data:', jsonData);
             res.json(jsonData);
+            console.log("cors is running");
         } catch (parseError) {
             console.error('Error parsing JSON data:', parseError);
             res.status(500).json({ error: 'Failed to parse data' });

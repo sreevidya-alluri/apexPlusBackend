@@ -3,17 +3,21 @@ const express = require("express");
 const bodyParser= require("body-parser");
 const fs = require("fs");
 const path  = require("path");
-const cors=require("cors");
+const cors = require("cors");
 const app = express();
 const userRoutes = require("./routes/userRoutes")
 const pokemonRoutes = require('./routes/pokemonRoutes'); 
 
+
 app.use(cors({
     origin: 'https://apexplusfrontendsreevidya.netlify.app', // Your frontend URL
-    methods: 'GET,POST,PUT,DELETE',
-    allowedHeaders: 'Content-Type,Authorization'
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials:true,
+    allowedHeaders: ['Content-Type', 'Authorization']
   }));
   
+
+
 app.use(bodyParser.json()); 
 app.use('/api/pokemons', pokemonRoutes); 
 app.use("/api/users",userRoutes);
