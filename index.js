@@ -8,7 +8,11 @@ const app = express();
 const userRoutes = require("./routes/userRoutes")
 const pokemonRoutes = require('./routes/pokemonRoutes'); 
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://main--apexplusfrontend.netlify.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
 app.use(bodyParser.json()); 
 app.use('/api/pokemons', pokemonRoutes); 
 app.use("/api/users",userRoutes);
