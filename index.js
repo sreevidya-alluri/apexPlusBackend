@@ -10,7 +10,7 @@ const pokemonRoutes = require('./routes/pokemonRoutes');
 
 
 app.use(cors({
-    origin: 'https://main--apexplusfrontendsv.netlify.app', // Your frontend URL
+    origin: 'https://main--apexplusfrontendsv.netlify.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials:true,
     allowedHeaders: ['Content-Type', 'Authorization']
