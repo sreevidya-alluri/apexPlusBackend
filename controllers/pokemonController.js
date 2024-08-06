@@ -4,6 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 
 const dataFilePath = path.join(__dirname, '../data/pokemons.json');
 
+
 // Initialize the JSON file if it doesn't exist
 if (!fs.existsSync(dataFilePath)) {
     fs.writeFileSync(dataFilePath, '[]', 'utf-8');
@@ -16,6 +17,7 @@ const getPokemons = (req, res) => {
         if (err) {
             console.error('Error reading data:', err);
             return res.status(500).json({ error: 'Failed to read data' });
+
         }
 
         try {
